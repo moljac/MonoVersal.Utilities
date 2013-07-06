@@ -40,34 +40,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\MonoVersal.Utilities.WP\Core\Net\IPAddress.cs">
+    <Compile Include="..\MonoVersal.Utilities.DLL_BL_WP\Core\Net\IPAddress.cs">
       <Link>Core\Net\IPAddress.cs</Link>
     </Compile>
-    <Compile Include="..\MonoVersal.Utilities.WP\DeviceInformation.cs">
-      <Link>DeviceInformation.cs</Link>
+    <Compile Include="..\MonoVersal.Utilities.DLL_BL_WP\System\Collections\IHashCodeProvider.cs">
+      <Link>System\Collections\IHashCodeProvider.cs</Link>
     </Compile>
-    <Compile Include="..\MonoVersal.Utilities.WP\System\Collections\Generic\RBTree.cs">
-      <Link>System\Collections\Generic\RBTree.cs</Link>
-    </Compile>
-    <Compile Include="..\MonoVersal.Utilities.WP\System\Collections\Generic\SortedDictionry.cs">
-      <Link>System\Collections\Generic\SortedDictionry.cs</Link>
-    </Compile>
-    <Compile Include="..\MonoVersal.Utilities.WP\System\Web\Util\Helpers.cs">
+    <Compile Include="..\MonoVersal.Utilities.DLL_BL_WP\System\Web\Util\Helpers.cs">
       <Link>System\Web\Util\Helpers.cs</Link>
     </Compile>
     <Compile Include="DeviceInformation.XA.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <Content Include="..\MonoVersal.Utilities.WP\System\Collections\documentation.txt">
+    <Content Include="..\MonoVersal.Utilities.DLL_BL_WP\System\Collections\documentation.txt">
       <Link>System\Collections\documentation.txt</Link>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;\.WP.cs;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" ProjectLinkReference="a919f6ab-044f-4ffb-866c-8827184fc926" />
+      <UserProperties ProjectLinkReference="a919f6ab-044f-4ffb-866c-8827184fc926" ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;\.WP.cs;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" />
     </VisualStudio>
   </ProjectExtensions>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

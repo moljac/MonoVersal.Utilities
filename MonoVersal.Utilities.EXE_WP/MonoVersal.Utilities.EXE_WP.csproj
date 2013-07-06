@@ -91,7 +91,7 @@
     <Content Include="SplashScreenImage.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MonoVersal.Utilities.WP\MonoVersal.Utilities.DLL_BL_WP.csproj">
+    <ProjectReference Include="..\MonoVersal.Utilities.DLL_BL_WP\MonoVersal.Utilities.DLL_BL_WP.csproj">
       <Project>{A919F6AB-044F-4FFB-866C-8827184FC926}</Project>
       <Name>MonoVersal.Utilities.DLL_BL_WP</Name>
     </ProjectReference>

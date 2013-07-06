@@ -77,7 +77,7 @@
     <Content Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MonoVersal.Utilities.XA\MonoVersal.Utilities.DLL_BL_XA.csproj">
+    <ProjectReference Include="..\MonoVersal.Utilities.DLL_BL_XA\MonoVersal.Utilities.DLL_BL_XA.csproj">
       <Project>{392D1C68-4F2E-4450-B71E-5DFAE7FA25E3}</Project>
       <Name>MonoVersal.Utilities.DLL_BL_XA</Name>
     </ProjectReference>

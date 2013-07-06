@@ -49,28 +49,26 @@
     <Reference Include="mscorlib.extensions" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Core\Net\IPAddress.cs" />
-    <Compile Include="DeviceInformation.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="System\Collections\IHashCodeProvider.cs" />
-    <Compile Include="System\Collections\Specialized\NameObjectCollectionBase.cs">
+    <Compile Include="Core\Net\IPAddress.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="System\Collections\Specialized\NameValueCollection.cs">
+    <Compile Include="DeviceInformation.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System\Collections\IHashCodeProvider.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="System\Web\HttpUtility.WP.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="System\Web\Util\Helpers.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\Web\Util\HttpEncoder.WP.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="System\Web\Util\HttpEncoder.WP.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="System\Collections\Generic\SortedDictionry.cs" />
     <Content Include="System\Collections\documentation.txt" />
-    <Compile Include="System\Collections\Generic\RBTree.cs" />
-    <Compile Include="System\Web\Util\Helpers.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
