@@ -224,8 +224,11 @@ namespace MonoVersal.Utilities
 			{
 				retval = "device does not support bluetooth";
 			}
+			else
+			{
+				retval = bt_adapter.Address;
+			}
 
-			retval = bt_adapter.Address;
 
 			return retval;
 		}
@@ -242,8 +245,11 @@ namespace MonoVersal.Utilities
 			{
 				retval = "device does not support bluetooth";
 			}
+			else
+			{
+				retval = bt_adapter.Name;
+			}
 
-			retval = bt_adapter.Name;
 
 			return retval;
 		}
