@@ -1,0 +1,16 @@
+﻿Sliverlight and Windows Phone BCL replacements
+
+	Non generic collections
+
+	http://blogs.msdn.com/b/bclteam/archive/2007/06/26/non-generic-collections-to-be-removed-from-silverlight-inbar-gazit.aspx
+
+	ArrayList -> List<>
+
+		http://en.csharp-online.net/CSharp_Generics_Recipes%E2%80%94Replacing_the_ArrayList_with_Its_Generic_Counterpart
+
+	HashTable -> Dictionary<>
+	
+		http://stackoverflow.com/questions/5011149/need-hashtable-and-arraylist
+
+	IHashCodeProvider -> IEqualityComparer 
+http://msdn.microsoft.com/en-us/library/ms132151.aspx
