@@ -132,10 +132,17 @@ namespace MonoVersal.Utilities
 		{
 			string retval = "";
 
-			string filename = @"/sys/class/android_usb/android0/iSerial";
-			using (System.IO.TextReader reader = System.IO.File.OpenText(filename))
+			try
 			{
-				retval = reader.ReadToEnd();
+				string filename = @"/sys/class/android_usb/android0/iSerial";
+				using (System.IO.TextReader reader = System.IO.File.OpenText(filename))
+				{
+					retval = reader.ReadToEnd();
+				}
+			}
+			catch (System.Exception exc)
+			{
+				retval = exc.ToString() + " : " + exc.Message;
 			}
 
 			return retval;
@@ -165,7 +172,7 @@ namespace MonoVersal.Utilities
 			}
 			catch (System.Exception exc)
 			{
-				retval = exc.Message;
+				retval = exc.ToString() + " : " + exc.Message;
 			}
 
 			return retval;
